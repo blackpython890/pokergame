@@ -1,4 +1,4 @@
-# Session 6 : Poker Game
+# Session6 : Poker Game
 
 
 
