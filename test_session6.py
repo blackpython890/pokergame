@@ -74,3 +74,8 @@ def test_player_total_card_match():
 def test_invalid_no_players():
     with pytest.raises(ValueError):
         session6.poker_star(5,5,['10clubs','9clubs','8clubs','7clubs','6clubs'],['acehearts','kinghearts','queenhearts','jackhearts','10hearts'])
+
+
+#11
+def test_total_generate_cards_without_lambda():
+    assert len(session6.generate_cards_witout_lambda) == 52 , 'Card Without 52.... Chaeting!! Cheating !!!'

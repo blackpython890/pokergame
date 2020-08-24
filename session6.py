@@ -3,8 +3,8 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
     Input:
         no_of_card : int no of cards each player has
         no_of_player : int total no of player playing the game
-        sequence_cardsA : list
-        sequence_cardsB : list
+        sequence_cardsA : list Example : ['10clubs','9clubs','8clubs','7clubs','6clubs']
+        sequence_cardsB : list Example : ['acehearts','kinghearts','queenhearts','jackhearts','10hearts']
     Output: winner of the match
     """
     if len(sequence_cardsA) != len (sequence_cardsB) :
@@ -93,3 +93,14 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
     else:
         raise ValueError("Enter The correct no of Player")
     return p
+
+
+
+
+
+def generate_cards_witout_lambda():
+    decks = []
+    for i in suits:
+        for j in cards:
+            decks.append([i,j])
+    return decks
