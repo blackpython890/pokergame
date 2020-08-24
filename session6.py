@@ -106,7 +106,7 @@ def generate_cards_without_lambda():
     decks = []
     for i in suits:
         for j in cards:
-            decks.append([i,j])
+            decks.append((i,j))
     return decks
 
 
