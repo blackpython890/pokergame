@@ -119,7 +119,7 @@ def test_win_check_in_three_pair_card():
 #17
 def test_A_winner_in_four_pair_card():
     q1 = session6.poker_star(4,2,['kinghearts','kingspades','9diamonds','8spades'],['acehearts','queenclubs','6hearts','4spades'])
-    assert q1 == 'Player A is winner'
+    assert q1 == 'Player B is winner'
 
 
 
@@ -127,7 +127,7 @@ def test_A_winner_in_four_pair_card():
 #18
 def test_A_winner_in_five_pair_card():
     q1 = session6.poker_star(5,2,['kinghearts','kingspades','9diamonds','8spades','4hearts'],['acehearts','queenclubs','6hearts','4spades','2diamonds'])
-    assert q1 == 'Player A is winner'
+    assert q1 == 'Player B is winner'
 
 
 
