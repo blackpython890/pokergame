@@ -7,6 +7,10 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
         sequence_cardsB : list
     Output: winner of the match
     """
+     if len(sequence_cardsA) == len (sequence_cardsB) :
+         raise ValueError("No Of Cards Should e same")
+    else:
+        pass
 
     a = ['acehearts','kinghearts','queenhearts','jackhearts','10hearts']
     b = ['10clubs','9clubs','8clubs','7clubs','6clubs']
