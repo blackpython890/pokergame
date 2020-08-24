@@ -56,9 +56,15 @@ def test_fourspace():
 #7
 def test_annotation():
     check = session6.poker_star.__annotations__ 
-    assert 'no_of_card' in check, 'You Must Define Annotation Properly'
+    assert check.has_key('no_of_card') == True, 'You Must Define Annotation Properly'
 
 
 #8
 def test_docstring():
     assert 'Input' in session6.poker_star.__doc__ , ' Docstring not Defined'
+
+
+#9
+def test_playner_total_card_match():
+    with pytest.raises(ValueError):
+        session6.poker_star(5,2,['10clubs','9clubs','8clubs','7clubs','6clubs'],['acehearts','kinghearts','queenhearts','jackhearts'])
