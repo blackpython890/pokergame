@@ -1,3 +1,7 @@
+cards = ['K','Q', 'J' , 'A' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '10']
+suits = ['Clubs' , 'Spades' , 'Diamond' , 'Hearts']
+
+
 def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', sequence_cardsB:'list') -> 'Match Winner':
     """returns winning player name 
     Input:

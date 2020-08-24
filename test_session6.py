@@ -78,4 +78,4 @@ def test_invalid_no_players():
 
 #11
 def test_total_generate_cards_without_lambda():
-    assert len(session6.generate_cards_witout_lambda()) == 52 , 'Card Without 52.... Chaeting!! Cheating !!!'
+    assert len(session6.generate_cards_witout_lambda) == 52 , 'Card Without 52.... Chaeting!! Cheating !!!'
