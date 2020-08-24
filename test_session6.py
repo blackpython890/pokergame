@@ -112,4 +112,4 @@ def test_cards_comparison_between_two_generator():
 #16
 def test_win_check_in_three_pair_card():
     q1 = session6.poker_star(3,2,['kinghearts','kingspades','9diamonds'],['acehearts','queenclubs','6hearts'])
-    assert q1 == 'Player A is winner'
+    assert q1 == 'Player B is winner'
