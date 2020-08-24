@@ -106,3 +106,10 @@ def test_cards_comparison_between_two_generator():
     without_lambda = session6.generate_cards_without_lambda()
     for i in with_lambda:
         assert i in without_lambda , 'There is a mismatch between two card generator'
+
+
+
+#16
+def test_win_check_in_three_pair_card():
+    q1 = session6.poker_star(3,2,['kinghearts','kingspades','9daimonds'],['acehearts','queenclubs','6hearts'])
+    assert q1 == 'Player A is winner'
