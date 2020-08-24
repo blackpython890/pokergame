@@ -19,16 +19,10 @@
   - It implements these functions (with exactly the same names) 
   
 &nbsp;
-``` html 
-    poker,pokerstar
-                            
-                            
-                          
 
-```
 &nbsp;
 - Write a test file, that tests all of the functions mentioned above + the other basic ones 
-- Test file must contain at least 25 tests
+- Test file must contain at least 20 tests
 
 
 ---
@@ -56,7 +50,3 @@
 | 12 | Cards Count 52  | Pass |
 
 ---
-
-### Author Info
-- Email :
-- Linkedin :
