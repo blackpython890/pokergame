@@ -102,9 +102,14 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
 
 
 
-def generate_cards_witout_lambda():
+def generate_cards_without_lambda():
     decks = []
     for i in suits:
         for j in cards:
             decks.append([i,j])
     return decks
+
+
+
+def generate_cards_with_lambda():
+    return list(zip((lambda y:y+y+y+y+y+y+y+y+y+y+y+y+y)(suits),(lambda x: x+x+x+x)(cards)))

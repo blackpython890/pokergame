@@ -78,9 +78,21 @@ def test_invalid_no_players():
 
 #11
 def test_total_generate_cards_without_lambda():
-    assert len(session6.generate_cards_witout_lambda()) == 52 , 'Card Without 52.... Chaeting!! Cheating !!!'
+    assert len(session6.generate_cards_without_lambda()) == 52 , 'Card Without 52.... Chaeting!! Cheating !!!'
 
 
 #12
 def test_card_exist_check_without_lambda():
-    assert ['Clubs', 'K'] in session6.generate_cards_witout_lambda() , 'Please Generate All Cards'
+    assert ['Clubs', 'K'] in session6.generate_cards_without_lambda() , 'Please Generate All Cards'
+
+
+
+#13
+def test_total_generate_cards_with_lambda():
+    assert len( session6.generate_cards_with_lambda()) == 52 , '......................................'
+
+
+
+#14
+def test_card_exist_check_with_lambda():
+    assert ('Clubs', 'K') in session6.generate_cards_with_lambda() , '-------------------------------------------------'
