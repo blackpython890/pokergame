@@ -7,8 +7,8 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
         sequence_cardsB : list
     Output: winner of the match
     """
-     if len(sequence_cardsA) != len (sequence_cardsB) :
-         raise ValueError("No Of Cards Should be same")
+    if len(sequence_cardsA) != len (sequence_cardsB) :
+        raise ValueError("No Of Cards Should be same")
     else:
         pass
 
