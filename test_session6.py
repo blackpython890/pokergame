@@ -111,14 +111,14 @@ def test_cards_comparison_between_two_generator():
 
 #16
 def test_win_check_in_three_pair_card():
-    q1 = session6.poker_star(3,2,['kinghearts','kingspades','9daimonds'],['acehearts','queenclubs','6hearts'])
+    q1 = session6.poker_star(3,2,['kinghearts','kingspades','9diamonds'],['acehearts','queenclubs','6hearts'])
     assert q1 == 'Player B is winner'
 
 
 
 #17
 def test_A_winner_in_four_pair_card():
-    q1 = session6.pokerstar(4,2,['kinghearts','kingspades','9daimonds','8spades'],['acehearts','queenclubs','6hearts','4spades'])
+    q1 = session6.poker_star(4,2,['kinghearts','kingspades','9daimonds','8spades'],['acehearts','queenclubs','6hearts','4spades'])
     assert q1 == 'Player A is winner'
 
 
@@ -126,12 +126,12 @@ def test_A_winner_in_four_pair_card():
 
 #18
 def test_A_winner_in_five_pair_card():
-    q1 = session6.pokerstar(5,2,['kinghearts','kingspades','9daimonds','8spades','4hearts'],['acehearts','queenclubs','6hearts','4spades','2diamonds'])
+    q1 = session6.poker_star(5,2,['kinghearts','kingspades','9daimonds','8spades','4hearts'],['acehearts','queenclubs','6hearts','4spades','2diamonds'])
     assert q1 == 'Player A is winner'
 
 
 
 #19
 def test_winner_in_five_pair_card():
-    q1=session6.pokerstar(5,2,['acehearts','queenclubs','6hearts','4spades','2diamonds'],['kinghearts','kingspades','9daimonds','8spades','4hearts'])
+    q1=session6.poker_star(5,2,['acehearts','queenclubs','6hearts','4spades','2diamonds'],['kinghearts','kingspades','9daimonds','8spades','4hearts'])
     assert q1=='Player B is winner'
