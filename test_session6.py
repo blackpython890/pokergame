@@ -51,3 +51,13 @@ def test_fourspace():
     for space in spaces:
         assert re.search('[a-zA-Z#@\'\"]', space), "Your code intentation does not follow PEP8 guidelines"
         assert len(re.sub(r'[a-zA-Z#@\n\"\']', '', space)) % 4 == 0, "Your code intentation does not follow PEP8 guidelines"
+
+
+#7
+def test_annotation():
+    assert 'no_of_card','int' in session6.poker_star.__annotations__ , 'You Must Define Annotation Properly'
+
+
+#8
+def test_docstring():
+    assert 'Input','Output' in session6.poker_star.__doc__ , ' Docstring not Defined'
