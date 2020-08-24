@@ -83,7 +83,7 @@ def test_total_generate_cards_without_lambda():
 
 #12
 def test_card_exist_check_without_lambda():
-    assert ['Clubs', 'K'] in session6.generate_cards_without_lambda() , 'Please Generate All Cards'
+    assert ('Clubs', 'K') in session6.generate_cards_without_lambda() , 'Please Generate All Cards'
 
 
 
