@@ -55,7 +55,8 @@ def test_fourspace():
 
 #7
 def test_annotation():
-    assert ('no_of_card','int') in session6.poker_star.__annotations__ , 'You Must Define Annotation Properly'
+    check = session6.poker_star.__annotations__ 
+    assert check['no_of_card'] == True, 'You Must Define Annotation Properly'
 
 
 #8
