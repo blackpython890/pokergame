@@ -55,9 +55,9 @@ def test_fourspace():
 
 #7
 def test_annotation():
-    assert 'no_of_card','int' in session6.poker_star.__annotations__ , 'You Must Define Annotation Properly'
+    assert ('no_of_card','int') in session6.poker_star.__annotations__ , 'You Must Define Annotation Properly'
 
 
 #8
 def test_docstring():
-    assert 'Input','Output' in session6.poker_star.__doc__ , ' Docstring not Defined'
+    assert ('Input','Output') in session6.poker_star.__doc__ , ' Docstring not Defined'

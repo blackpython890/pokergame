@@ -1,4 +1,3 @@
-
 def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', sequence_cardsB:'list') -> 'Match Winner':
     """returns winning player name 
     Input:
@@ -6,7 +5,7 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
         no_of_player : int total no of player playing the game
         sequence_cardsA : list
         sequence_cardsB : list
-    Outputs: winner of the match
+    Output: winner of the match
     """
 
     a = ['acehearts','kinghearts','queenhearts','jackhearts','10hearts']
