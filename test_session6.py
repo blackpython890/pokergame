@@ -60,4 +60,4 @@ def test_annotation():
 
 #8
 def test_docstring():
-    assert ('Input','Output') in session6.poker_star.__doc__ , ' Docstring not Defined'
+    assert 'Input' in session6.poker_star.__doc__ , ' Docstring not Defined'
