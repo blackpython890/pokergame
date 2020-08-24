@@ -91,5 +91,5 @@ def poker_star(no_of_card:'int', no_of_player:'int', sequence_cardsA:'list', seq
         else:
             p="please enter correct number of card"
     else:
-        p="please enter correct number of players"
+        raise ValueError("Enter The correct no of Player")
     return p
