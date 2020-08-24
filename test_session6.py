@@ -96,3 +96,13 @@ def test_total_generate_cards_with_lambda():
 #14
 def test_card_exist_check_with_lambda():
     assert ('Clubs', 'K') in session6.generate_cards_with_lambda() , '-------------------------------------------------'
+
+
+
+
+#15
+def test_cards_comparison_between_two_generator():
+    with_lambda = session6.generate_cards_without_lambda()
+    without_lambda = session6.generate_cards_without_lambda()
+    for i in with_lambda:
+        assert i in without_lambda , 'There is a mismatch between two card generator'
