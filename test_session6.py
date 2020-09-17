@@ -1,4 +1,4 @@
-import os , inspect , pytest , session6 , re
+import os , inspect , pytest , re, session6
 
 README_CONTENT_CHECK_FOR = ['Session6']
 
